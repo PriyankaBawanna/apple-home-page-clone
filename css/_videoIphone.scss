@@ -1,0 +1,122 @@
+.video_iphone {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  display: center;
+}
+.video_text {
+  color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 15px;
+}
+.video_phone1 {
+  margin-left: 300px;
+  margin-top: -65px;
+  width: 1541px;
+}
+
+.IntroIphoneHEading {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: 60px;
+  margin-left: 645px;
+  white-space: nowrap;
+  height: 165px;
+  width: 1009px;
+}
+
+/*
+.smalltext {
+  position: relative;
+
+  background-image: none;
+  -webkit-mask-image: linear-gradient(
+    var(--hero-headline-angle),
+    rgba(0, 0, 0, 0) var(--gradient-progress),
+    #000 var(--gradient-progress-2)
+  );
+  mask-image: linear-gradient(
+    var(--hero-headline-angle),
+    rgba(0, 0, 0, 0) var(--gradient-progress),
+    #000 var(--gradient-progress-2)
+  );
+  padding-bottom: 0;
+  opacity: 0;
+}
+
+.Pro_iphone {
+  font-size: 17px;
+  line-height: 1.23536;
+  font-weight: 600;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  color: white;
+}*/
+html.enhance-base-xp .section-hero.show-headline .hero-headline-lockup {
+  opacity: 1;
+  padding-bottom: 12px;
+  position: relative;
+  position: relative;
+
+  background-image: none;
+  -webkit-mask-image: linear-gradient(
+    var(--hero-headline-angle),
+    rgba(0, 0, 0, 0) var(--gradient-progress),
+    #000 var(--gradient-progress-2)
+  );
+  mask-image: linear-gradient(
+    var(--hero-headline-angle),
+    rgba(0, 0, 0, 0) var(--gradient-progress),
+    #000 var(--gradient-progress-2)
+  );
+  padding-bottom: 0;
+  opacity: 0;
+}
+.section-hero .hero-eyebrow {
+  color: #f5f5f7;
+}
+
+.typography-hero-eyebrow {
+  font-size: 21px;
+  line-height: 1.19048;
+  font-weight: 600;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  color: #f5f5f7;
+  margin-left: -185px;
+
+  text-align: center;
+  width: 0%;
+  transition: width 2s ease-in 0.05s;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#typography-section-headline {
+  font-size: 85px;
+  line-height: 1.05;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-top: 22px;
+  color: #f5f5f7;
+  margin-left: 20px;
+}
+.section-hero video {
+  display: none;
+}
+audio,
+canvas,
+video,
+progress {
+  vertical-align: baseline;
+}
+user agent stylesheet video {
+  object-fit: contain;
+}

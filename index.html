@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>apple</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    .anotherheader {
+      margin-top: 50px;
+      color: white;
+    }
+    .stickyheader {
+      position: sticky;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      -webkit-transition: all ease-out 0.5s;
+      -moz-transition: all ease-out 0.5s;
+      -o-transition: all ease-out 0.5s;
+      transition: all ease-out 0.5s;
+    }
+      span{
+    opacity: 0;
+    transition: all 2s ease;
+  }
+  span.fade{
+    opacity: 1;
+  }
+  </style>
+  <body onload="animate()">
+    <div class="layout">
+      <div class="header">
+        <div class="headerElemnt">
+          <div class="applelogo">
+            <img
+              src="https://www.apple.com/ac/globalnav/6/en_IN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg"
+              alt=""
+              style="height: 55px; width: 55px"
+            />
+          </div>
+          <div class="store">
+            Store
+          </div>
+          <div class="Mac">
+            Mac
+          </div>
+          <div class="ipad">
+            iPad
+          </div>
+          <div class="iphone">
+           iPhone
+          </div>
+          <div class="watch">
+          Watch
+          </div>
+          <div class="tv">
+           Tv
+          </div>
+          <div class="music">
+          Music
+          </div>
+
+          <div class="support">
+            Support
+          </div>
+          <div class="search">
+        
+        <span class="material-icons" style="color: white; opacity: 1;">
+search
+</span>
+        
+          </div>
+          
+            <div class="bag">
+              <h3>helo</h3>
+              <img
+                src="https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_bag_image__bmix8075eg4i_large.svg"
+                alt=""
+                class="img_bag"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="stickyheader">
+          <div class="headerContainer">
+            <div class="ihphonetext">
+            iPhone 12 Pro
+            </div>
+            <div class="overview">
+            Overview
+            </div>
+            <div class="techspeces">
+            Tech Specs
+            </div>
+            <div class="buybutton">
+              <button class="btnbuy">buy</button>
+            </div>
+          </div>
+        </div>
+        <div class="ribin" style="background-color: #1d1d1f">
+          <div class="ribintext">
+        
+              Save on the newest iPhone with the latest carrier deals. Directly
+              from Apple.
+      
+            <a href="#" class="linkIphone"> &nbsp;&nbsp;Find your offer ></a>
+          </div>
+        </div>
+        <div class="video_iphone">
+          <div class="video_text">
+            <div class=" IntroIphoneHEading">
+              <div class="hero-headline-lockup">
+              
+              
+              
+                <h1 class=" hero-eyebrow typography-hero-eyebrow" id="main">
+                  iPhone&nbsp;12&nbsp;Pro and iPhone&nbsp;12&nbsp;Pro&nbsp;Max
+                </h1>
+                
+                <h2 class=" fancy hero-headline" id="typography-section-headline">
+                  It’s a leap year.
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="video_iphone_container">
+          <video class="video_phone1" autoplay playsinline muted>
+            <source
+              src="https://www.apple.com/105/media/us/iphone-12-pro/2020/e70ffbd8-50f1-40f3-ac36-0f03a15ac314/anim/hero/large.mp4"
+              type="video/mp4"
+              class="video_phone"
+            />
+          </video>
+        </div>
+        <div class="descriptiontext">
+          <p class="section-intro" >5G goes Pro. A14 Bionic rockets past every other smartphone chip. The Pro camera system takes low-light photography to the next level — with an even bigger jump on iPhone&nbsp;12&nbsp;Pro&nbsp;Max. And Ceramic Shield delivers four times better drop performance. Let’s see what this thing can do.</p>
+          <p class="section-intro-p">From $41.62/mo. for 24 mo. or $999 before trade‑in</p>
+          <div class="watchMore">
+            <a href="#" id="linkvideo"style="text-decoration: none;"><b class="watchMoview"style="color: #f5f5f7;">Watch the film</b></a>
+            <span class="material-icons"style="opacity: 1;">
+play_circle
+</span>
+          </div>
+        </div>
+        <div class="bezel">
+      
+            <h3 class="text2" style="color: white;"></h3>
+      
+        </div>
+      </div>
+      
+    </div>
+    
+  <script type="text/javascript">
+     var text = document.querySelector(".fancy");
+        
+     var strText = text.textContent;
+     var splitText = strText.split("");
+     console.log(splitText);
+     text.textContent=" ";
+     for(let i=0;i<splitText.length;i++)
+     {
+       text.innerHTML +="<span>"+ splitText[i]+"</span>";
+     }
+      var char =0;
+      var timer = setInterval(onTick,90);
+       function onTick()
+       {
+         const span = text.querySelectorAll('span')[char];
+         span.classList.add('fade');
+         char++
+         if(char===splitText.length)
+         {
+           complete();
+           return;
+         }
+
+       }
+   
+function complete()
+{
+  clearInterval(timer);
+  timer=null;
+}
+function animate() {
+  document.getElementById("main").style.width = "100%";
+}
+  </script>
+
+  </body>
+</html>

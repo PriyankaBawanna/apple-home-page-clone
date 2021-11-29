@@ -1,0 +1,77 @@
+.descriptiontext {
+  color: #a1a1a6;
+  text-align: center;
+  width: 70%;
+  margin-left: 350px;
+  margin-top: 150px;
+}
+.section-intro {
+  font-size: 32px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  flex-basis: 66.66667%;
+  max-width: 66.66667%;
+}
+.section-intro-p {
+  margin-top: 50px;
+  font-size: 32px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  flex-basis: 66.66667%;
+  max-width: 66.66667%;
+}
+
+.watchMore {
+  margin-top: 150px;
+  margin-top: 150px;
+  font-size: 32px;
+  text-decoration: none;
+  color: #f5f5f7;
+
+  .watchMovie {
+    margin-top: 150px;
+    font-size: 32px;
+    text-decoration: none;
+    color: #f5f5f7;
+  }
+}
+/**/
+.text2{
+    --text-reveal-out-angle: 180;
+    --gradient-progress: 69.9326%;
+    --gradient-progress-2: 169.933%;
+    --gradient-angle: 135deg;
+text-align: left;
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+  
+    --gradient-progress-2: 0%;
+    --gradient-angle: 90deg;
+    --gradient-color: 255;
+    --gradient-color-2: 240;
+    --gradient-opacity: 1;
+    --gradient-opacity-2: 0
+
+    background-image: linear-gradient(var(--gradient-angle), rgba(var(--gradient-color), var(--gradient-color), var(--gradient-color), var(--gradient-opacity)) var(--gradient-progress), rgba(var(--gradient-color-2), var(--gradient-color-2), var(--gradient-color-2), var(--gradient-opacity-2)) var(--gradient-progress-2));
+font-size: 40px;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: 0em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    color: white;
+}
